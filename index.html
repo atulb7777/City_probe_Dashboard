@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<h1 class="heading">City Probe Dashboard</h1>
+	<div class="topnav">
+  		<a class="active" href="#home">Pollution Level</a>
+  		<a href="#">Street Level View</a>
+  		<a href="#">Bus Stoppage level view</a>
+  		<a href="#">Accident Prone Area</a>
+  		<a href="#">Night View</a>
+	</div>
+	<div class="sidenav-left">
+  		<a href="#">Beneficiaries</a>
+  		<a href="#">Municipal Authorities</a>
+  		<a href="#">Commuters</a>
+  		<a href="#">Police</a>
+  		<a href="#">Road Profile</a>
+  		<a href="#">Driver Profile</a>
+  		<a href="#">Pollution Profile</a>
+  		<a href="#">Notification</a>
+  		<a href="#">Admin</a>
+  		<a href="#">User</a>
+	</div>
+	<div class="sidenav-right">
+  		<a href="#">Healthy Road</a>
+  		<a href="#">Highly Polluted Zone</a>
+  		<a href="#">Pollutant Information</a>
+  		<a href="#">Road Surface Information</a>
+	</div>
+	<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+	var mapOptions = {
+    	center: new google.maps.LatLng(23.547999, 87.288637),
+   		zoom: 15,
+    	mapTypeId: google.maps.MapTypeId.ROADMAP
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL32I-a0q0I2ZOqrtk8TXOKvx9voQquC4&callback=myMap"></script>
+</body>
